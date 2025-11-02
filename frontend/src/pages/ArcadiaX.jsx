@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Layers, Box, Wand2, ArrowRight, Zap, Paintbrush, Ghost, Target, Trophy, Plus, Headphones, Users, Monitor, Wifi, Gauge, Shield } from 'lucide-react';
 import { siteData } from '../mock';
 import SpaceTransformation3D from '../components/SpaceTransformation3D';
+import BookDemoSection from '../components/BookDemoSection';
 
 const gameIconMap = {
   Zap,
