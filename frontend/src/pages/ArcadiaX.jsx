@@ -95,7 +95,7 @@ export const ArcadiaX = () => {
             <img 
               src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png" 
               alt="ArcadiaX" 
-              className="h-40 md:h-48 mx-auto drop-shadow-2xl"
+              className="h-56 md:h-72 mx-auto drop-shadow-2xl"
             />
           </div>
           <h1 className="text-6xl md:text-7xl font-bold mb-8 text-white">Mixed Reality Drift Karting</h1>
