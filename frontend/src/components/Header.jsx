@@ -20,7 +20,7 @@ export const Header = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Experience', path: '/experience' },
+    { name: 'ArcadiaX', path: '/arcadiax' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Locations', path: '/locations' },
     { name: 'Contact', path: '/contact' }
