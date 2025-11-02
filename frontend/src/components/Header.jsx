@@ -10,13 +10,14 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
     };
 
-    // Initial check
+    // Run immediately
     handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -28,9 +29,16 @@ export const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-slate-900/95 backdrop-blur-lg border-b border-slate-800 shadow-lg' : 'bg-transparent'
-    }`}>
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled 
+          ? 'bg-slate-900/98 backdrop-blur-xl border-b border-slate-800 shadow-2xl' 
+          : 'bg-transparent'
+      }`}
+      style={{
+        backdropFilter: isScrolled ? 'blur(20px)' : 'none'
+      }}
+    >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
