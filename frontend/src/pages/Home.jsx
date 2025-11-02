@@ -172,9 +172,6 @@ export const Home = () => {
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <Badge className="mb-6 px-6 py-2 bg-purple-500/20 border-purple-500/50 text-purple-300">
-                Technology
-              </Badge>
               <h2 className="text-5xl font-bold mb-8 text-white leading-tight">
                 Built for Venues, Designed for Fun
               </h2>
