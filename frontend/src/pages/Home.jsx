@@ -40,10 +40,18 @@ export const Home = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <Badge className="mb-6 px-6 py-2 text-sm font-medium bg-white/10 backdrop-blur-md border-white/20 text-white hover:bg-white/20">
-            The Future of Social Gaming
+            Powered by GGeese Studio
           </Badge>
           
-          <h1 className="text-6xl md:text-8xl font-bold mb-8 text-white leading-tight">
+          <div className="mb-8">
+            <img 
+              src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png" 
+              alt="ArcadiaX Logo" 
+              className="h-32 md:h-40 mx-auto mb-6"
+            />
+          </div>
+          
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
             {siteData.heroTitle}
           </h1>
           
@@ -54,7 +62,7 @@ export const Home = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/contact">
               <Button size="lg" className="px-8 py-6 text-lg font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
-                Book Experience
+                Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
@@ -75,18 +83,18 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Platform Features Section */}
       <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 text-white">Why Choose GGeese?</h2>
+            <h2 className="text-5xl font-bold mb-6 text-white">The ArcadiaX Platform</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              We're pioneering the next generation of entertainment by merging physical thrills with virtual possibilities.
+              A complete mixed reality gaming solution that brings social party games and competitive entertainment to any venue.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {siteData.features.map((feature, index) => {
+            {siteData.platformFeatures.map((feature, index) => {
               const Icon = iconMap[feature.icon];
               return (
                 <Card 
@@ -108,7 +116,7 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Concept Section */}
+      {/* Games Library Section */}
       <section className="py-24 bg-slate-950 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-96 h-96 bg-purple-500 rounded-full blur-3xl" />
@@ -116,33 +124,83 @@ export const Home = () => {
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <Badge className="mb-6 px-6 py-2 bg-purple-500/20 border-purple-500/50 text-purple-300">
+              Game Library
+            </Badge>
+            <h2 className="text-5xl font-bold mb-8 text-white leading-tight">
+              Multiple Party Games, Endless Fun
+            </h2>
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+              ArcadiaX features a growing library of social party games designed for 4-8 players. From drift karting to ghost hunts and paint battles - there's something for everyone.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {siteData.games.map((game, index) => {
+              const Icon = gameIconMap[game.icon];
+              return (
+                <Card 
+                  key={game.id}
+                  className="group bg-slate-800/50 backdrop-blur-sm border-slate-700 overflow-hidden hover:border-purple-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className={`h-3 bg-gradient-to-r ${game.color}`} />
+                  <CardContent className="p-6">
+                    <div className="flex items-start gap-4">
+                      <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${game.color} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                        <Icon className="w-6 h-6 text-white" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-bold mb-2 text-white">{game.name}</h3>
+                        <p className="text-slate-300 text-sm">{game.description}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link to="/experience">
+              <Button size="lg" className="px-8 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold hover:scale-105 transition-all duration-300 shadow-lg">
+                Explore All Games
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Technology Section */}
+      <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <Badge className="mb-6 px-6 py-2 bg-purple-500/20 border-purple-500/50 text-purple-300">
-                Innovation Meets Fun
+                Technology
               </Badge>
               <h2 className="text-5xl font-bold mb-8 text-white leading-tight">
-                Transform Any Space Into An Epic Gaming Arena
+                Built for Venues, Designed for Fun
               </h2>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Our cutting-edge mixed reality technology takes ordinary warehouses and transforms them into extraordinary gaming worlds. Race through cyberpunk cities, fantasy realms, or futuristic landscapes - all while physically drifting in our custom-built karts.
+                ArcadiaX combines Meta Quest 3 headsets with custom drift karts, operator management tools, and spectator engagement features to create the ultimate social gaming experience.
               </p>
               <ul className="space-y-4 mb-10">
-                {[
-                  'Real-time multiplayer with up to 12 players',
-                  'Customizable virtual environments',
-                  'Professional drift kart equipment',
-                  'Suitable for events, parties, and competitions'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center text-slate-200">
-                    <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4" />
-                    <span className="text-lg">{item}</span>
+                {siteData.technology.map((item, index) => (
+                  <li key={index} className="flex items-start gap-4">
+                    <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-1">{item.title}</h3>
+                      <p className="text-slate-300">{item.description}</p>
+                    </div>
                   </li>
                 ))}
               </ul>
               <Link to="/experience">
                 <Button size="lg" className="px-8 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold hover:scale-105 transition-all duration-300 shadow-lg">
-                  Explore the Experience
+                  See How It Works
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
@@ -152,8 +210,8 @@ export const Home = () => {
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-xl border border-white/10 p-8 flex items-center justify-center">
                 <img 
                   src="https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/47uq5hwj_LogoNoText.png" 
-                  alt="GGeese Logo" 
-                  className="w-full h-full object-contain animate-float"
+                  alt="GGeese Studio Logo" 
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -161,34 +219,29 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900">
+      {/* Use Cases Section */}
+      <section className="py-24 bg-slate-900">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 text-white">What Players Say</h2>
+            <h2 className="text-5xl font-bold mb-6 text-white">Perfect For Any Venue</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Don't just take our word for it - hear from those who've experienced the future of gaming.
+              From entertainment centers to corporate events, ArcadiaX transforms any space into an unforgettable XR gaming destination.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {siteData.testimonials.map((testimonial, index) => (
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {siteData.useCases.map((useCase, index) => (
               <Card 
-                key={testimonial.id} 
+                key={useCase.id} 
                 className="bg-slate-800/50 backdrop-blur-sm border-slate-700 hover:border-purple-500/50 transition-all duration-500 hover:scale-105"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <CardContent className="p-8">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                    ))}
+                <CardContent className="p-8 text-center">
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center mx-auto mb-6">
+                    <div className="text-3xl font-bold text-white">{index + 1}</div>
                   </div>
-                  <p className="text-slate-300 mb-6 leading-relaxed italic">"{testimonial.content}"</p>
-                  <div className="border-t border-slate-700 pt-4">
-                    <p className="font-semibold text-white">{testimonial.name}</p>
-                    <p className="text-sm text-slate-400">{testimonial.role}</p>
-                  </div>
+                  <h3 className="text-xl font-bold mb-3 text-white">{useCase.title}</h3>
+                  <p className="text-slate-300">{useCase.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -200,9 +253,9 @@ export const Home = () => {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 cta-gradient" />
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Ready to Experience the Future?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Ready to Transform Your Venue?</h2>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-            Book your mixed reality drift racing experience today and step into a world where imagination becomes reality.
+            Bring the future of entertainment to your location with ArcadiaX. Contact us to learn more about licensing and setup.
           </p>
           <Link to="/contact">
             <Button size="lg" className="px-12 py-8 text-xl font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
