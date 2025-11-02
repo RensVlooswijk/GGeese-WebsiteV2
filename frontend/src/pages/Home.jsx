@@ -119,17 +119,9 @@ export const Home = () => {
       </section>
 
       {/* Games Library Section */}
-      <section className="py-24 bg-slate-950 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-purple-500 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-pink-500 rounded-full blur-3xl" />
-        </div>
-        
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="py-24 bg-slate-950">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <Badge className="mb-6 px-6 py-2 bg-purple-500/20 border-purple-500/50 text-purple-300">
-              Game Library
-            </Badge>
             <h2 className="text-5xl font-bold mb-8 text-white leading-tight">
               Multiple Party Games, Endless Fun
             </h2>
