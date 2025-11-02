@@ -7,7 +7,6 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Twitter, url: siteData.contactInfo.socialMedia.twitter, label: 'Twitter' },
     { icon: Linkedin, url: siteData.contactInfo.socialMedia.linkedin, label: 'LinkedIn' },
     { icon: Instagram, url: siteData.contactInfo.socialMedia.instagram, label: 'Instagram' },
     { icon: Youtube, url: siteData.contactInfo.socialMedia.youtube, label: 'YouTube' }
@@ -19,12 +18,6 @@ export const Footer = () => {
       { name: 'Experience', path: '/experience' },
       { name: 'Gallery', path: '/gallery' },
       { name: 'Contact', path: '/contact' }
-    ],
-    services: [
-      { name: 'Corporate Events', path: '/contact' },
-      { name: 'Private Parties', path: '/contact' },
-      { name: 'Team Building', path: '/contact' },
-      { name: 'Competitions', path: '/contact' }
     ],
     legal: [
       { name: 'Privacy Policy', path: '/privacy' },
