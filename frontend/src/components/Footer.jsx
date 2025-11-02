@@ -29,7 +29,7 @@ export const Footer = () => {
   return (
     <footer className="bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6 group">
@@ -41,7 +41,7 @@ export const Footer = () => {
               <span className="text-2xl font-bold text-white">GGeese Studio</span>
             </Link>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              Pioneering the future of entertainment with mixed reality drift racing. Where physical thrills meet virtual possibilities.
+              Pioneering the future of entertainment with mixed reality gaming. Where physical thrills meet virtual possibilities.
             </p>
             
             {/* Contact Info */}
@@ -85,23 +85,6 @@ export const Footer = () => {
             <h3 className="text-white font-bold text-lg mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-slate-400 hover:text-purple-400 transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services Links */}
-          <div>
-            <h3 className="text-white font-bold text-lg mb-4">Services</h3>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.path}
