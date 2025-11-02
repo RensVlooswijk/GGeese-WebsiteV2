@@ -90,6 +90,24 @@
     }
 }
 
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(123, 63, 242, 0.4), 0 0 40px rgba(233, 75, 158, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(123, 63, 242, 0.6), 0 0 80px rgba(233, 75, 158, 0.4);
+    }
+}
+
 .animate-float {
     animation: float 6s ease-in-out infinite;
 }
@@ -100,6 +118,10 @@
 
 .animate-fadeInUp {
     animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
 }
 
 /* Smooth Scrolling */
