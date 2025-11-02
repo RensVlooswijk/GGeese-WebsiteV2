@@ -104,7 +104,7 @@ export const Header = () => {
               ))}
               <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold">
-                  Get Started
+                  Book a Demo
                 </Button>
               </Link>
             </div>
