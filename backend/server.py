@@ -77,6 +77,31 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/contact", response_model=ContactFormResponse)
+async def submit_contact_form(request: ContactFormRequest, background_tasks: BackgroundTasks):
+    """
+    Handle contact form submissions and send email to GGeese Studio
+    """
+    try:
+        # Add email sending to background tasks for better performance
+        background_tasks.add_task(
+            send_contact_form_email,
+            request.name,
+            request.email,
+            request.message
+        )
+        
+        return ContactFormResponse(
+            status="success",
+            message="Thank you for your message! We'll get back to you soon."
+        )
+    except EmailDeliveryError as e:
+        logger.error(f"Email delivery error: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to send message. Please try again later.")
+    except Exception as e:
+        logger.error(f"Unexpected error: {str(e)}")
+        raise HTTPException(status_code=500, detail="An unexpected error occurred")
+
 # Include the router in the main app
 app.include_router(api_router)
 
