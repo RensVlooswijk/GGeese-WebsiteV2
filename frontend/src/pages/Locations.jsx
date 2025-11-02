@@ -171,7 +171,7 @@ export const Locations = () => {
               <Card className="bg-slate-800/50 backdrop-blur-sm border-slate-700 text-center">
                 <CardContent className="p-8">
                   <DollarSign className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-white mb-2">€40-50</div>
+                  <div className="text-4xl font-bold text-white mb-2">€30</div>
                   <p className="text-slate-300">Per Player / Session</p>
                   <p className="text-sm text-slate-400 mt-2">60-minute gameplay</p>
                 </CardContent>
@@ -180,9 +180,9 @@ export const Locations = () => {
               <Card className="bg-slate-800/50 backdrop-blur-sm border-slate-700 text-center">
                 <CardContent className="p-8">
                   <Users className="w-12 h-12 text-pink-400 mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-white mb-2">4-8</div>
+                  <div className="text-4xl font-bold text-white mb-2">4-6</div>
                   <p className="text-slate-300">Players Per Session</p>
-                  <p className="text-sm text-slate-400 mt-2">€320-400 per session</p>
+                  <p className="text-sm text-slate-400 mt-2">€120-180 per session</p>
                 </CardContent>
               </Card>
               
