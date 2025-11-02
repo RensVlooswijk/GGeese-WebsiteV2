@@ -32,6 +32,7 @@ const useCaseIcons = {
 
 export const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [selectedGame, setSelectedGame] = useState(null);
 
   useEffect(() => {
     setIsVisible(true);
@@ -39,29 +40,59 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
+      {/* Hero Section - Exciting Animated */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 hero-gradient" />
         
-        {/* Subtle floating elements */}
-        <div className="absolute inset-0 overflow-hidden opacity-20">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '0s', animationDuration: '8s' }} />
-          <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-white rounded-full blur-3xl animate-float" style={{ animationDelay: '2s', animationDuration: '10s' }} />
+        {/* Animated grid background */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 2px, transparent 2px), linear-gradient(90deg, rgba(255,255,255,0.1) 2px, transparent 2px)',
+            backgroundSize: '50px 50px',
+            animation: 'grid-move 20s linear infinite'
+          }} />
+        </div>
+        
+        {/* Animated particles */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(30)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-2 h-2 bg-white rounded-full"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `particle-float ${5 + Math.random() * 10}s ease-in-out infinite`,
+                animationDelay: `${Math.random() * 5}s`,
+                opacity: Math.random() * 0.5 + 0.2
+              }}
+            />
+          ))}
+        </div>
+        
+        {/* Glowing orbs */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-400/30 rounded-full blur-3xl animate-pulse-slow" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-400/30 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
         </div>
         
         <div className={`relative z-10 container mx-auto px-6 text-center transition-all duration-1000 transform ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           
-          <div className="mb-12">
+          {/* Logo with glow effect */}
+          <div className="mb-12 relative">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-64 h-64 bg-white/20 rounded-full blur-3xl animate-pulse-slow" />
+            </div>
             <img 
               src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png" 
               alt="ArcadiaX Logo" 
-              className="h-48 md:h-64 mx-auto mb-8 drop-shadow-2xl"
+              className="h-56 md:h-72 mx-auto mb-8 drop-shadow-2xl relative z-10 animate-float-slow"
             />
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
+          <h1 className="text-5xl md:text-8xl font-bold mb-8 text-white leading-tight animate-text-glow">
             {siteData.heroTitle}
           </h1>
           
@@ -71,14 +102,14 @@ export const Home = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/contact">
-              <Button size="lg" className="px-10 py-7 text-lg font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
+              <Button size="lg" className="px-10 py-7 text-lg font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-white/50 animate-bounce-subtle">
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
             
             <Link to="/gallery">
-              <Button size="lg" variant="outline" className="px-10 py-7 text-lg font-semibold bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300">
+              <Button size="lg" variant="outline" className="px-10 py-7 text-lg font-semibold bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300 hover:border-white/60">
                 <Play className="mr-2 w-5 h-5" />
                 Watch Demo
               </Button>
@@ -88,7 +119,7 @@ export const Home = () => {
         
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/70 rounded-full" />
+            <div className="w-1.5 h-3 bg-white/70 rounded-full animate-scroll-indicator" />
           </div>
         </div>
       </section>
