@@ -5,7 +5,7 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Label } from '../components/ui/label';
 import { Badge } from '../components/ui/badge';
-import { Mail, Phone, MapPin, Send, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { siteData } from '../mock';
 import { toast } from 'sonner';
 
@@ -21,7 +21,7 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    try {
+    try:
       const backendUrl = process.env.REACT_APP_BACKEND_URL;
       const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
@@ -60,7 +60,6 @@ export const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: Twitter, url: siteData.contactInfo.socialMedia.twitter, label: 'Twitter' },
     { icon: Linkedin, url: siteData.contactInfo.socialMedia.linkedin, label: 'LinkedIn' },
     { icon: Instagram, url: siteData.contactInfo.socialMedia.instagram, label: 'Instagram' },
     { icon: Youtube, url: siteData.contactInfo.socialMedia.youtube, label: 'YouTube' }
