@@ -3,7 +3,7 @@
 export const siteData = {
   companyName: "GGeese Studio",
   productName: "ArcadiaX",
-  tagline: "Where Reality Meets Play",
+  tagline: "Pioneering Immersive Mixed Reality Entertainment",
   heroTitle: "Transform Any Space Into An Epic Mixed Reality Game Center",
   heroSubtitle: "ArcadiaX is the ultimate XR gaming platform featuring drift karts, party games, and social entertainment - all in immersive mixed reality.",
   
