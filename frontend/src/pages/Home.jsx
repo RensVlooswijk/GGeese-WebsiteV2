@@ -101,7 +101,7 @@ export const Home = () => {
                   <p className="text-xl text-white/95 mb-6 leading-relaxed">
                     The ultimate mixed reality drift karting platform featuring multiple party games, spectator modes, and turnkey venue solutions.
                   </p>
-                  <Link to="/experience">
+                  <Link to="/arcadiax">
                     <Button size="lg" variant="outline" className="border-white/50 text-white hover:bg-white/20 px-8 py-3">
                       Learn More About ArcadiaX
                       <ArrowRight className="ml-2 w-5 h-5" />
