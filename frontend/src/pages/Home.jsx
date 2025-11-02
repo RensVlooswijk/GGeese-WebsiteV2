@@ -92,7 +92,7 @@ export const Home = () => {
             />
           </div>
           
-          <h1 className="text-5xl md:text-8xl font-bold mb-8 text-white leading-tight animate-text-glow">
+          <h1 className="text-5xl md:text-8xl font-bold mb-8 text-white leading-tight">
             {siteData.heroTitle}
           </h1>
           
@@ -100,26 +100,20 @@ export const Home = () => {
             {siteData.heroSubtitle}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link to="/contact">
-              <Button size="lg" className="px-10 py-7 text-lg font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-white/50 animate-bounce-subtle">
+              <Button size="lg" className="px-12 py-7 text-lg font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
                 Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
             
             <Link to="/gallery">
-              <Button size="lg" variant="outline" className="px-10 py-7 text-lg font-semibold bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white/20 hover:scale-110 transition-all duration-300 hover:border-white/60">
+              <Button size="lg" variant="outline" className="px-12 py-7 text-lg font-semibold bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300">
                 <Play className="mr-2 w-5 h-5" />
                 Watch Demo
               </Button>
             </Link>
-          </div>
-        </div>
-        
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center pt-2">
-            <div className="w-1.5 h-3 bg-white/70 rounded-full animate-scroll-indicator" />
           </div>
         </div>
       </section>
