@@ -110,13 +110,13 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* Platform Features Section */}
+      {/* What We Do Section */}
       <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold mb-6 text-white">The ArcadiaX Platform</h2>
+            <h2 className="text-5xl font-bold mb-6 text-white">What We Do</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              A complete mixed reality gaming solution that brings social party games and competitive entertainment to any venue.
+              GGeese Studio specializes in creating cutting-edge location-based mixed reality entertainment that drives revenue and creates unforgettable experiences.
             </p>
           </div>
           
