@@ -39,43 +39,91 @@ export const siteData = {
       id: 1,
       name: "MR Drift Karting",
       description: "Race through virtual worlds while physically drifting in custom karts",
+      fullDescription: "Experience the thrill of high-speed drift racing as you navigate through stunning virtual environments while physically driving our custom-built drift karts. Feel the adrenaline as you drift around corners, dodge virtual obstacles, and compete against friends in real-time multiplayer races.",
       color: "from-cyan-500 to-purple-600",
-      icon: "Zap"
+      icon: "Zap",
+      features: [
+        "Physical drift karts with integrated MR headsets",
+        "Multiple themed race tracks (cyberpunk, fantasy, space)",
+        "Real-time position tracking and collision detection",
+        "Power-ups and boost pads for competitive advantage",
+        "Spectator mode with live race commentary"
+      ]
     },
     {
       id: 2,
       name: "Paint Battle",
       description: "Cover the arena in your team's colors in this competitive painting game",
+      fullDescription: "Transform the physical arena into a vibrant canvas! Teams compete to paint the largest area with their color while driving around in karts equipped with virtual paint launchers. Strategic gameplay meets chaotic fun as you try to cover your opponents' colors while defending your own territory.",
       color: "from-pink-500 to-orange-500",
-      icon: "Paintbrush"
+      icon: "Paintbrush",
+      features: [
+        "Team-based territorial control gameplay",
+        "Real-time color tracking and scoring",
+        "Special paint power-ups (mega splash, color shield)",
+        "Dynamic arena visualization for spectators",
+        "Instant replay of best moments"
+      ]
     },
     {
       id: 3,
       name: "Ghost Hunt",
       description: "Hunt virtual ghosts in spooky mixed reality environments",
+      fullDescription: "The arena transforms into a haunted mansion filled with mischievous ghosts! Players must work together or compete to catch the most ghosts using virtual ghost-catching equipment. Navigate through the darkened arena, spot floating spirits in your MR headset, and capture them before time runs out.",
       color: "from-purple-600 to-indigo-600",
-      icon: "Ghost"
+      icon: "Ghost",
+      features: [
+        "Cooperative or competitive ghost hunting modes",
+        "Different ghost types with unique behaviors",
+        "Environmental obstacles and hiding spots",
+        "Spooky audio and visual effects",
+        "Leaderboard for top ghost hunters"
+      ]
     },
     {
       id: 4,
       name: "Whack-a-Mole",
       description: "Classic arcade action reimagined for mixed reality karting",
+      fullDescription: "The beloved arcade classic gets a high-speed makeover! Virtual moles pop up throughout the arena, and players must race to them and 'whack' them using their kart's bumper. Quick reflexes and strategic positioning are key as moles appear faster and in trickier locations as the game progresses.",
       color: "from-green-500 to-teal-500",
-      icon: "Target"
+      icon: "Target",
+      features: [
+        "Fast-paced arcade action with karts",
+        "Progressive difficulty levels",
+        "Combo scoring for quick successive whacks",
+        "Special golden moles for bonus points",
+        "Time attack and endless modes"
+      ]
     },
     {
       id: 5,
       name: "Holy Cows",
       description: "Team-based challenges with quirky objectives and fast-paced action",
+      fullDescription: "In this hilarious team game, players must herd virtual cows through checkpoints while avoiding obstacles and interference from the opposing team. It's chaos, strategy, and laughter rolled into one as cows scatter, escape, and cause mayhem throughout the arena.",
       color: "from-yellow-500 to-orange-600",
-      icon: "Trophy"
+      icon: "Trophy",
+      features: [
+        "Unique team-based herding mechanics",
+        "Unpredictable cow AI for added challenge",
+        "Strategic blocking and defensive play",
+        "Multiple rounds with rotating objectives",
+        "Perfect for corporate team building"
+      ]
     },
     {
       id: 6,
       name: "More Games Coming",
       description: "New party games and experiences added regularly",
+      fullDescription: "We're constantly developing new games and experiences for the ArcadiaX platform. From racing challenges to puzzle games, obstacle courses to battle royales - the possibilities are endless in mixed reality. Have a game idea? We'd love to hear it!",
       color: "from-slate-600 to-slate-800",
-      icon: "Plus"
+      icon: "Plus",
+      features: [
+        "Regular platform updates with new content",
+        "Community-driven game development",
+        "Custom game modes for special events",
+        "Seasonal themed games and challenges",
+        "Beta testing opportunities for venues"
+      ]
     }
   ],
   
