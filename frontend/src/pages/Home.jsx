@@ -241,17 +241,9 @@ export const Home = () => {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-24 bg-gradient-to-b from-slate-900 to-slate-950 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        </div>
-        
-        <div className="container mx-auto px-6 relative z-10">
+      <section className="py-24 bg-slate-900">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <Badge className="mb-6 px-6 py-2 bg-purple-500/20 border-purple-500/50 text-purple-300">
-              The Team
-            </Badge>
             <h2 className="text-5xl font-bold mb-6 text-white">Meet Our Founders</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               The innovators behind GGeese Studio and ArcadiaX, pioneering the future of mixed reality entertainment.
