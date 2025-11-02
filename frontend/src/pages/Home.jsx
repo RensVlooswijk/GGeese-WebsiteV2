@@ -329,22 +329,8 @@ export const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 cta-gradient" />
-        <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Ready to Transform Your Venue?</h2>
-          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-            Bring the future of entertainment to your location with ArcadiaX. Contact us to learn more about licensing and setup.
-          </p>
-          <Link to="/contact">
-            <Button size="lg" className="px-12 py-8 text-xl font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
-              Get in Touch
-              <ArrowRight className="ml-3 w-6 h-6" />
-            </Button>
-          </Link>
-        </div>
-      </section>
+      {/* Book a Demo CTA Section */}
+      <BookDemoSection />
     </div>
   );
 };
