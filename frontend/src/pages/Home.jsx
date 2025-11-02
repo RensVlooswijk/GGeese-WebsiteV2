@@ -23,18 +23,18 @@ export const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section - Redesigned */}
+      {/* Hero Section - GGeese Studio XR Studio */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 hero-gradient" />
         
-        {/* Diagonal stripes pattern */}
+        {/* Subtle pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.1) 35px, rgba(255,255,255,0.1) 70px)'
           }} />
         </div>
         
-        {/* Large floating orbs */}
+        {/* Floating elements */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl animate-pulse-slow" />
           <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-pink-400/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
@@ -44,40 +44,68 @@ export const Home = () => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           
-          {/* Large bold logo */}
-          <div className="mb-16 relative">
+          {/* GGeese Studio Logo */}
+          <div className="mb-12">
             <img 
-              src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png" 
-              alt="ArcadiaX" 
-              className="h-64 md:h-80 mx-auto drop-shadow-2xl"
+              src="https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/05ax7qxt_Logo.png" 
+              alt="GGeese Studio" 
+              className="h-48 md:h-64 mx-auto drop-shadow-2xl"
             />
           </div>
           
-          <h1 className="text-6xl md:text-9xl font-black mb-10 text-white leading-none tracking-tight">
-            The Future of<br />
-            <span className="bg-gradient-to-r from-cyan-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-              Social Gaming
-            </span>
+          <h1 className="text-6xl md:text-8xl font-black mb-8 text-white leading-tight tracking-tight">
+            XR Game Studio
           </h1>
           
-          <p className="text-2xl md:text-3xl mb-14 text-white/95 max-w-4xl mx-auto font-medium leading-relaxed">
-            Transform any space into an epic mixed reality arena where friends race, compete, and play together in immersive party games.
+          <p className="text-2xl md:text-3xl mb-6 text-white/95 max-w-4xl mx-auto font-medium leading-relaxed">
+            Creating next-generation location-based entertainment experiences
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link to="/locations">
-              <Button size="lg" className="px-14 py-8 text-xl font-bold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
-                Partner With Us
+          <p className="text-xl md:text-2xl mb-16 text-white/85 max-w-3xl mx-auto font-light">
+            We design and develop immersive mixed reality gaming platforms that transform venues into unforgettable social entertainment destinations.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center mb-20">
+            <Link to="/experience">
+              <Button size="lg" className="px-16 py-8 text-xl font-bold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
+                Discover ArcadiaX
                 <ArrowRight className="ml-3 w-6 h-6" />
               </Button>
             </Link>
             
-            <Link to="/gallery">
-              <Button size="lg" variant="outline" className="px-14 py-8 text-xl font-bold bg-white/10 backdrop-blur-md border-2 border-white/50 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300">
-                <Play className="mr-3 w-6 h-6" />
-                See It In Action
+            <Link to="/locations">
+              <Button size="lg" variant="outline" className="px-16 py-8 text-xl font-bold bg-white/10 backdrop-blur-md border-2 border-white/50 text-white hover:bg-white/20 hover:scale-105 transition-all duration-300">
+                Partner With Us
+                <ArrowRight className="ml-3 w-6 h-6" />
               </Button>
             </Link>
+          </div>
+
+          {/* Featured Product Callout */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-xl border-2 border-white/30 rounded-2xl p-8">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="flex-shrink-0">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png" 
+                    alt="ArcadiaX" 
+                    className="h-32 w-auto"
+                  />
+                </div>
+                <div className="text-left">
+                  <h3 className="text-3xl font-bold text-white mb-3">Our Flagship Product</h3>
+                  <p className="text-xl text-white/90 mb-4 leading-relaxed">
+                    The ultimate mixed reality drift karting platform featuring multiple party games, spectator modes, and turnkey venue solutions.
+                  </p>
+                  <Link to="/experience">
+                    <Button variant="outline" className="border-white/50 text-white hover:bg-white/20">
+                      Learn More About ArcadiaX
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
