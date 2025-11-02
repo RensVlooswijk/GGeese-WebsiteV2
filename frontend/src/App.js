@@ -5,7 +5,7 @@ import { Toaster } from "./components/ui/sonner";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
-import { Experience } from "./pages/Experience";
+import { ArcadiaX } from "./pages/ArcadiaX";
 import { Gallery } from "./pages/Gallery";
 import { Contact } from "./pages/Contact";
 import { Locations } from "./pages/Locations";
@@ -18,10 +18,12 @@ function App() {
         <main className="pt-20">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/experience" element={<Experience />} />
+            <Route path="/arcadiax" element={<ArcadiaX />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/locations" element={<Locations />} />
+            {/* Keep old route for backwards compatibility */}
+            <Route path="/experience" element={<ArcadiaX />} />
           </Routes>
         </main>
         <Footer />
