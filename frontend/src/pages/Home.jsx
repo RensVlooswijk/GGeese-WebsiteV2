@@ -180,7 +180,7 @@ export const Home = () => {
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </Link>
-                <Link to="/experience">
+                <Link to="/arcadiax">
                   <Button size="lg" variant="outline" className="px-8 py-6 bg-slate-800 border-slate-700 text-white hover:bg-slate-700 hover:scale-105 transition-all duration-300">
                     Explore ArcadiaX
                     <ArrowRight className="ml-2 w-5 h-5" />
