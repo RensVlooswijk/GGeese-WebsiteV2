@@ -17,46 +17,24 @@ const gameIconMap = {
 
 export const Experience = () => {
   const [isTransformed, setIsTransformed] = useState(false);
-  const [selectedEnvironment, setSelectedEnvironment] = useState('cyberpunk');
-
-  const environments = [
-    {
-      id: 'cyberpunk',
-      name: 'Cyberpunk City',
-      color: 'from-cyan-500 to-purple-600',
-      description: 'Neon-lit streets and futuristic skyscrapers'
-    },
-    {
-      id: 'fantasy',
-      name: 'Fantasy Realm',
-      color: 'from-emerald-500 to-blue-600',
-      description: 'Magical landscapes with mythical creatures'
-    },
-    {
-      id: 'space',
-      name: 'Space Station',
-      color: 'from-indigo-500 to-pink-600',
-      description: 'Zero-gravity racing through the cosmos'
-    }
-  ];
 
   const steps = [
     {
       number: '01',
-      title: 'Empty Space',
-      description: 'Start with any warehouse or empty venue',
+      title: 'Empty Venue',
+      description: 'Start with any warehouse or empty space (15x15m to 20x30m)',
       icon: Box
     },
     {
       number: '02',
-      title: 'MR Overlay',
-      description: 'Our technology adds virtual elements in real-time',
+      title: 'MR Anchoring',
+      description: 'Our platform maps the space and anchors virtual elements',
       icon: Layers
     },
     {
       number: '03',
-      title: 'Full Transformation',
-      description: 'Experience completely immersive gaming worlds',
+      title: 'Game Selection',
+      description: 'Choose from our library of party games and start playing',
       icon: Wand2
     }
   ];
