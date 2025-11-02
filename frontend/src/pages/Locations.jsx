@@ -8,8 +8,8 @@ export const Locations = () => {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "High Revenue Potential",
-      description: "Premium pricing model with 60-minute sessions at €40-50 per player, generating €320-400 per session"
+      title: "Strong Revenue Potential",
+      description: "Sessions priced at €30 per player with 4-6 players generating €120-180 per hour, creating consistent revenue streams"
     },
     {
       icon: Users,
