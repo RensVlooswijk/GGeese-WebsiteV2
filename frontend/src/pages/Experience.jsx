@@ -207,21 +207,23 @@ export const Experience = () => {
           </div>
         </div>
       </section>
+      {/* Platform Capabilities */}
+      <section className="py-20 bg-slate-950">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-5xl font-bold mb-8 text-white leading-tight">
-                Endless Possibilities
+                Complete Platform Solution
               </h2>
               <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-                Our mixed reality platform supports unlimited custom environments. Whether you want to race through a neon-lit cyberpunk city, drift across alien planets, or compete in fantasy realms, we make it possible.
+                ArcadiaX provides everything you need to run a successful mixed reality gaming center - from hardware to software, operator tools to spectator engagement.
               </p>
               <div className="space-y-6">
                 {[
-                  { title: 'Custom Tracks', desc: 'Design your own racing circuits with unique obstacles and power-ups' },
-                  { title: 'Multiplayer Modes', desc: 'Compete with friends in various game modes and challenges' },
-                  { title: 'Real-time Updates', desc: 'Environments change dynamically during gameplay for endless variety' },
-                  { title: 'Event Packages', desc: 'Perfect for corporate events, birthdays, and competitions' }
+                  { title: '4-8 Player Capacity', desc: 'Optimal social gaming with flexible arena sizes (15x15m to 20x30m)' },
+                  { title: 'Operator Management App', desc: 'Control all games, scores, and settings from a single tablet interface' },
+                  { title: 'Spectator Engagement', desc: 'Let friends watch and even interact with gameplay in real-time' },
+                  { title: 'Growing Game Library', desc: 'New games and experiences added regularly via platform updates' }
                 ].map((item, index) => (
                   <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
@@ -245,10 +247,10 @@ export const Experience = () => {
               ].map((img, index) => (
                 <div 
                   key={index}
-                  className="aspect-square rounded-xl overflow-hidden hover:scale-105 transition-transform duration-500"
+                  className="aspect-square rounded-xl overflow-hidden hover:scale-105 transition-transform duration-500 shadow-lg"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <img src={img} alt={`Feature ${index + 1}`} className="w-full h-full object-cover" />
+                  <img src={img} alt={`Platform feature ${index + 1}`} className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
@@ -260,13 +262,13 @@ export const Experience = () => {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-600 to-purple-700" />
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Ready to Race?</h2>
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white">Ready to Launch Your Gaming Center?</h2>
           <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto">
-            Experience the future of gaming today. Book your session now.
+            Contact GGeese Studio to learn about ArcadiaX licensing, setup, and how we can transform your venue.
           </p>
           <Link to="/contact">
             <Button size="lg" className="px-12 py-8 text-xl font-semibold bg-white text-purple-600 hover:bg-white/90 hover:scale-105 transition-all duration-300 shadow-2xl">
-              Book Your Experience
+              Get in Touch
               <ArrowRight className="ml-3 w-6 h-6" />
             </Button>
           </Link>
