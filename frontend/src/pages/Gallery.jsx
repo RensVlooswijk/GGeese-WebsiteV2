@@ -22,12 +22,8 @@ export const Gallery = () => {
       {/* Header */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 gallery-gradient" />
-        <div className="absolute inset-0 hero-pattern opacity-5" />
         
         <div className="container mx-auto px-6 relative z-10 text-center">
-          <Badge className="mb-6 px-6 py-2 bg-white/10 backdrop-blur-md border-white/20 text-white">
-            Gallery
-          </Badge>
           <h1 className="text-6xl md:text-7xl font-bold mb-8 text-white">Experience In Action</h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
             See our mixed reality drift racing in action through gameplay videos and behind-the-scenes moments.
