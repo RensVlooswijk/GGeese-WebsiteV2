@@ -69,7 +69,7 @@ export const Header = () => {
           <div className="hidden md:block">
             <Link to="/contact">
               <Button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold">
-                Get Started
+                Book a Demo
               </Button>
             </Link>
           </div>
