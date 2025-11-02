@@ -329,7 +329,7 @@ export const Home = () => {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold mb-6 text-white">Meet Our Founders</h2>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              The innovators behind GGeese Studio and ArcadiaX, pioneering the future of mixed reality entertainment.
+              The visionaries behind GGeese Studio and ArcadiaX, pioneering the future of mixed reality entertainment.
             </p>
           </div>
           
@@ -337,28 +337,28 @@ export const Home = () => {
             {siteData.team.map((member, index) => (
               <Card 
                 key={member.id}
-                className="group relative bg-slate-800/30 backdrop-blur-md border-slate-700 overflow-hidden hover:border-purple-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20"
+                className="group relative bg-slate-800/40 backdrop-blur-md border-slate-700 overflow-hidden hover:border-purple-500/70 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 via-transparent to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-600/5 via-transparent to-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <CardContent className="p-0 relative">
-                  <div className="aspect-square overflow-hidden">
+                  <div className="aspect-square overflow-hidden bg-slate-900">
                     <img 
                       src={member.image} 
                       alt={member.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
                   
                   <div className="p-8">
-                    <h3 className="text-2xl font-bold text-white mb-2">{member.name}</h3>
+                    <h3 className="text-3xl font-bold text-white mb-3">{member.name}</h3>
                     <div className="mb-4">
-                      <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white border-0">
+                      <span className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-semibold">
                         {member.role}
-                      </Badge>
+                      </span>
                     </div>
-                    <p className="text-lg font-semibold text-purple-300 mb-3">{member.title}</p>
+                    <p className="text-lg font-semibold text-purple-300 mb-4">{member.title}</p>
                     <p className="text-slate-300 leading-relaxed">{member.description}</p>
                   </div>
                 </CardContent>
