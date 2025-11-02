@@ -274,22 +274,6 @@ export const ArcadiaX = () => {
         </div>
       </section>
 
-      {/* Interactive 3D Transformation Demo */}
-      <section className="py-24 bg-slate-900">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold mb-6 text-white">Interactive Space Transformation</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-8">
-              Experience how ArcadiaX transforms any empty venue into an immersive mixed reality gaming arena. Rotate, explore, and watch the magic happen.
-            </p>
-          </div>
-          
-          <div className="max-w-6xl mx-auto">
-            <SpaceTransformation3D />
-          </div>
-        </div>
-      </section>
-
       {/* Arena Specs */}
       <section className="py-24 bg-slate-950">
         <div className="container mx-auto px-6">
