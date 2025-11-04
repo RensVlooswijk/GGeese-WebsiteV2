@@ -7,75 +7,75 @@
   z-index: 0;
 }
 
-/* Corner Glows - Subtle and Elegant */
+/* Corner Glows - More Vibrant Purple/Pink Theme */
 .corner-glow {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.15;
+  filter: blur(120px);
+  opacity: 0.25;
   animation: corner-pulse 8s ease-in-out infinite;
 }
 
 .corner-glow-purple {
-  background: radial-gradient(circle, #7c3aed, transparent);
+  background: radial-gradient(circle, #7c3aed, #6b21a8, transparent);
 }
 
 .corner-glow-pink {
-  background: radial-gradient(circle, #ec4899, transparent);
+  background: radial-gradient(circle, #ec4899, #be185d, transparent);
 }
 
 .corner-glow-cyan {
-  background: radial-gradient(circle, #06b6d4, transparent);
+  background: radial-gradient(circle, #a855f7, #7c3aed, transparent);
 }
 
 .top-left {
-  top: -200px;
-  left: -200px;
+  top: -250px;
+  left: -250px;
 }
 
 .top-right {
-  top: -200px;
-  right: -200px;
+  top: -250px;
+  right: -250px;
   animation-delay: 2s;
 }
 
 .bottom-left {
-  bottom: -200px;
-  left: -200px;
+  bottom: -250px;
+  left: -250px;
   animation-delay: 4s;
 }
 
 .bottom-right {
-  bottom: -200px;
-  right: -200px;
+  bottom: -250px;
+  right: -250px;
   animation-delay: 6s;
 }
 
 @keyframes corner-pulse {
   0%, 100% {
-    opacity: 0.15;
+    opacity: 0.2;
     transform: scale(1);
   }
   50% {
-    opacity: 0.25;
-    transform: scale(1.1);
+    opacity: 0.35;
+    transform: scale(1.15);
   }
 }
 
-/* Subtle Grid Overlay */
+/* Subtle Grid Overlay - Purple Tint */
 .grid-overlay {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(124, 58, 237, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(124, 58, 237, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
   background-size: 50px 50px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
-/* Particles - Very Subtle */
+/* Particles - Purple/Pink Tinted */
 .particles-container {
   position: absolute;
   inset: 0;
@@ -85,10 +85,11 @@
   position: absolute;
   width: 3px;
   height: 3px;
-  background: white;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
   border-radius: 50%;
   opacity: 0;
   animation: particle-float ease-in-out infinite;
+  box-shadow: 0 0 4px rgba(168, 85, 247, 0.5);
 }
 
 @keyframes particle-float {
@@ -97,14 +98,14 @@
     transform: translateY(0) scale(0);
   }
   10% {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   50% {
-    opacity: 0.6;
-    transform: translateY(-100px) scale(1);
+    opacity: 0.7;
+    transform: translateY(-100px) scale(1.2);
   }
   90% {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   100% {
     opacity: 0;
@@ -112,7 +113,7 @@
   }
 }
 
-/* Accent Lines - Vertical Subtle Lines */
+/* Accent Lines - Vertical Purple/Pink Gradient Lines */
 .accent-lines {
   position: absolute;
   inset: 0;
@@ -121,41 +122,41 @@
 .accent-line {
   position: absolute;
   top: 0;
-  width: 1px;
+  width: 2px;
   height: 100%;
-  opacity: 0.1;
+  opacity: 0.15;
   animation: line-glow 6s ease-in-out infinite;
 }
 
 .accent-line-purple {
-  background: linear-gradient(180deg, transparent, #7c3aed, transparent);
+  background: linear-gradient(180deg, transparent, #7c3aed, #a855f7, transparent);
 }
 
 .accent-line-pink {
-  background: linear-gradient(180deg, transparent, #ec4899, transparent);
+  background: linear-gradient(180deg, transparent, #ec4899, #f472b6, transparent);
   animation-delay: 2s;
 }
 
 .accent-line-cyan {
-  background: linear-gradient(180deg, transparent, #06b6d4, transparent);
+  background: linear-gradient(180deg, transparent, #a855f7, #ec4899, transparent);
   animation-delay: 4s;
 }
 
 @keyframes line-glow {
   0%, 100% {
-    opacity: 0.1;
+    opacity: 0.15;
   }
   50% {
-    opacity: 0.3;
+    opacity: 0.35;
   }
 }
 
 /* Mobile Optimizations */
 @media (max-width: 768px) {
   .corner-glow {
-    width: 250px;
-    height: 250px;
-    filter: blur(80px);
+    width: 300px;
+    height: 300px;
+    filter: blur(100px);
   }
   
   .grid-overlay {
@@ -176,6 +177,6 @@
   }
   
   .corner-glow {
-    opacity: 0.15;
+    opacity: 0.2;
   }
 }
