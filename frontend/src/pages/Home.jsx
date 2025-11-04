@@ -6,6 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Layers, Users, Sparkles, Maximize2, ArrowRight, Play, Linkedin, Instagram, MessageSquare, Calendar } from 'lucide-react';
 import { siteData } from '../mock';
 import BookDemoSection from '../components/BookDemoSection';
+import AnimatedBubbles from '../components/AnimatedBubbles';
 
 const iconMap = {
   Layers,
@@ -28,18 +29,8 @@ export const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 hero-gradient" />
         
-        {/* Subtle pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.1) 35px, rgba(255,255,255,0.1) 70px)'
-          }} />
-        </div>
-        
-        {/* Floating elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-1/4 -left-32 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl animate-pulse-slow" />
-          <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-pink-400/20 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '2s' }} />
-        </div>
+        {/* Animated Bubbles Background */}
+        <AnimatedBubbles />
         
         <div className={`relative z-10 container mx-auto px-6 text-center transition-all duration-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
