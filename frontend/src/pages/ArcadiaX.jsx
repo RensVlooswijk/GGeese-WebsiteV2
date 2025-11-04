@@ -6,7 +6,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Layers, Box, Wand2, ArrowRight, Zap, Paintbrush, Ghost, Target, Trophy, Plus, Headphones, Users, Monitor, Wifi, Gauge, Shield } from 'lucide-react';
 import { siteData } from '../mock';
 import BookDemoSection from '../components/BookDemoSection';
-import AnimatedBubbles from '../components/AnimatedBubbles';
+import DarkAccents from '../components/DarkAccents';
 
 const gameIconMap = {
   Zap,
@@ -90,8 +90,8 @@ export const ArcadiaX = () => {
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 hero-gradient" />
         
-        {/* Animated Bubbles Background */}
-        <AnimatedBubbles />
+        {/* Dark Accents Background */}
+        <DarkAccents />
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="mb-8">
