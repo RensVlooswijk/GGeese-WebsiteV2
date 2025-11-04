@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './ui/button';
 import { Calendar, ArrowRight, Zap } from 'lucide-react';
+import DarkAccents from './DarkAccents';
 
 export default function BookDemoSection({ variant = 'default' }) {
   if (variant === 'hero') {
