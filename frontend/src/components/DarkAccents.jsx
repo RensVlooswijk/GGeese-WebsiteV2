@@ -28,13 +28,6 @@ const DarkAccents = () => {
           />
         ))}
       </div>
-      
-      {/* Subtle vertical lines accent */}
-      <div className="accent-lines">
-        <div className="accent-line accent-line-purple" style={{ left: '20%' }} />
-        <div className="accent-line accent-line-pink" style={{ left: '50%' }} />
-        <div className="accent-line accent-line-cyan" style={{ left: '80%' }} />
-      </div>
     </div>
   );
 };
