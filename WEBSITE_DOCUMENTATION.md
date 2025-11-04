@@ -1,8 +1,17 @@
-# GGeese Studio Website - Complete Documentation
+# GGeese Studio Website - Complete Documentation & Content Guide
 
 ## 🎯 Overview
 
 The GGeese Studio website is a conversion-optimized, agency-quality platform showcasing an XR (Extended Reality) game development studio and their flagship product, ArcadiaX - a revolutionary mixed reality drift karting platform that transforms empty venues into immersive gaming arenas.
+
+**Website Purpose:** To generate leads from venue owners, entertainment businesses, and investors interested in implementing cutting-edge mixed reality gaming experiences at their locations.
+
+**Target Audience:**
+- Entertainment venue owners (arcades, family entertainment centers)
+- Real estate developers looking for anchor tenants
+- Corporate event planners
+- Franchise investors
+- Entertainment industry professionals
 
 ---
 
