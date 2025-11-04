@@ -12,11 +12,11 @@
 .gallery-gradient,
 .experience-gradient,
 .contact-gradient {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2e 30%, #2d1b4e 60%, #1a0a2e 100%);
 }
 
 .cta-gradient {
-    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--primary-pink) 50%, var(--primary-cyan) 100%);
+    background: linear-gradient(135deg, #6B2FB5 0%, #9B4DCA 25%, #E94B9E 75%, #FF6B9D 100%);
 }
 
 /* Subtle accent gradient for sections */
