@@ -78,7 +78,7 @@ export const Home = () => {
           </div>
 
           {/* Featured Product Callout - More Spacing */}
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto mt-32">
             <div className="bg-white/10 backdrop-blur-xl border-2 border-white/30 rounded-3xl p-12 shadow-2xl">
               <div className="flex flex-col md:flex-row items-center gap-10">
                 <div className="flex-shrink-0">
