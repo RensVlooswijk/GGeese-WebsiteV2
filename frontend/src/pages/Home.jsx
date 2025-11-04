@@ -26,7 +26,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section - GGeese Studio XR Studio */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-32">
         <div className="absolute inset-0 hero-gradient" />
         
         {/* Dark Accents Background */}
