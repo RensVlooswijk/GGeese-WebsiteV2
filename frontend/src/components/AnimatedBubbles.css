@@ -1,0 +1,115 @@
+/* Animated Bubbles Container */
+.bubbles-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Base Bubble Styles */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float ease-in-out infinite, pulse ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* Bubble Sizes */
+.bubble-xsmall {
+  width: 150px;
+  height: 150px;
+}
+
+.bubble-small {
+  width: 250px;
+  height: 250px;
+}
+
+.bubble-medium {
+  width: 350px;
+  height: 350px;
+}
+
+.bubble-large {
+  width: 500px;
+  height: 500px;
+}
+
+/* Bubble Colors - Purple */
+.bubble-purple {
+  background: radial-gradient(circle at 30% 30%, #a855f7, #7c3aed);
+}
+
+/* Bubble Colors - Pink */
+.bubble-pink {
+  background: radial-gradient(circle at 30% 30%, #f472b6, #ec4899);
+}
+
+/* Bubble Colors - Cyan */
+.bubble-cyan {
+  background: radial-gradient(circle at 30% 30%, #22d3ee, #06b6d4);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, -30px) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, 20px) scale(0.95);
+  }
+  75% {
+    transform: translate(40px, 10px) scale(1.02);
+  }
+}
+
+/* Pulsing/Flashing Animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .bubble {
+    filter: blur(60px);
+  }
+  
+  .bubble-large {
+    width: 350px;
+    height: 350px;
+  }
+  
+  .bubble-medium {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .bubble-small {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .bubble-xsmall {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .bubble {
+    animation: none;
+    opacity: 0.3;
+  }
+}
