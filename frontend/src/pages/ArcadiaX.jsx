@@ -7,6 +7,7 @@ import { siteData } from '../mock';
 import BookDemoSection from '../components/BookDemoSection';
 import DarkAccents from '../components/DarkAccents';
 import SEO from '../components/SEO';
+import assets from '../config/assets';
 
 const gameIconMap = {
   Zap,
@@ -108,9 +109,11 @@ export const ArcadiaX = () => {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="mb-8">
             <img
-              src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png"
+              src={assets.arcadiaxLogo}
               alt="ArcadiaX"
               className="h-48 md:h-64 mx-auto drop-shadow-2xl"
+              loading="eager" fetchPriority="high"
+              onError={(e) => { e.currentTarget.src = '/images/placeholder-arcadiax.svg'; }}
             />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Mixed Reality Drift Karting</h1>

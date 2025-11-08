@@ -1,4 +1,5 @@
 // Mock data for GGeese Studio website
+import assets from './config/assets';
 
 export const siteData = {
   companyName: "GGeese Studio",
@@ -155,21 +156,21 @@ export const siteData = {
       id: 1,
       title: "ArcadiaX Platform Overview",
       description: "See how we transform spaces into mixed reality game centers",
-      thumbnail: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80",
+  thumbnail: assets.videoThumbnailFallback,
       placeholder: true
     },
     {
       id: 2,
       title: "Paint Battle Gameplay",
       description: "Watch teams compete in our colorful Paint Battle game",
-      thumbnail: "https://images.unsplash.com/photo-1617802690658-1173a812650d?w=800&q=80",
+  thumbnail: assets.videoThumbnailFallback,
       placeholder: true
     },
     {
       id: 3,
       title: "Drift Karting in Action",
       description: "Experience the thrill of MR drift racing",
-      thumbnail: "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80",
+  thumbnail: assets.videoThumbnailFallback,
       placeholder: true
     }
   ],
@@ -267,7 +268,7 @@ export const siteData = {
       role: "Co-Founder",
       title: "Product Vision & Business Development",
       description: "Creative entrepreneur, passionate about user experience and building the future of MR.",
-      image: "https://ggeese.nl/_next/image?url=%2Frens.png&w=3840&q=75"
+  image: assets.team.rens
     },
     {
       id: 2,
@@ -275,7 +276,7 @@ export const siteData = {
       role: "Co-Founder",
       title: "Technical Lead",
       description: "Technical mastermind, always pushing the boundaries of immersive technology.",
-      image: "https://ggeese.nl/_next/image?url=%2Fruslan.png&w=3840&q=75"
+  image: assets.team.ruslan
     }
   ],
   

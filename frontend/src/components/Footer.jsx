@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Linkedin, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 import { siteData } from '../mock';
-import Newsletter from './Newsletter';
+import assets from '../config/assets';
+// Newsletter removed per request
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -30,19 +31,18 @@ export const Footer = () => {
   return (
     <footer className="bg-slate-950 border-t border-slate-800">
       <div className="container mx-auto px-6 py-16">
-        {/* Newsletter Section */}
-        <div className="mb-16">
-          <Newsletter />
-        </div>
+        {/* Newsletter Section removed */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6 group">
               <img 
-                src="https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/47uq5hwj_LogoNoText.png"
+                src={assets.footerLogo}
                 alt="GGeese Logo"
                 className="h-12 w-12 group-hover:scale-110 transition-transform duration-300"
+                loading="lazy" decoding="async"
+                onError={(e) => { e.currentTarget.src = '/images/placeholder-logo.svg'; }}
               />
               <span className="text-2xl font-bold text-white">GGeese Studio</span>
             </Link>

@@ -10,6 +10,7 @@ import DarkAccents from '../components/DarkAccents';
 import Reveal from '../components/Reveal';
 import PartnerStrip from '../components/PartnerStrip';
 import SEO from '../components/SEO';
+import assets from '../config/assets';
 
 const iconMap = {
   Layers,
@@ -50,9 +51,11 @@ export const Home = () => {
           {/* GGeese Studio Logo */}
           <div className="mb-10 mt-0">
             <img 
-              src="https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/05ax7qxt_Logo.png" 
+              src={assets.heroLogo} 
               alt="GGeese Studio" 
               className="h-48 md:h-64 mx-auto drop-shadow-2xl"
+              loading="eager" fetchPriority="high"
+              onError={(e) => { e.currentTarget.src = '/images/placeholder-logo.svg'; }}
             />
           </div>
           
@@ -83,10 +86,11 @@ export const Home = () => {
               <div className="flex flex-col md:flex-row items-center gap-10">
                 <div className="flex-shrink-0">
                   <img 
-                    src="https://customer-assets.emergentagent.com/job_ggeese-nextgen/artifacts/789fh31c_ArcadiaX-Logo.png" 
+                    src={assets.arcadiaxLogo} 
                     alt="ArcadiaX" 
                     className="h-48 md:h-56 w-auto"
                     loading="lazy" decoding="async"
+                    onError={(e) => { e.currentTarget.src = '/images/placeholder-arcadiax.svg'; }}
                   />
                 </div>
                 <div className="text-left">
@@ -187,10 +191,11 @@ export const Home = () => {
             <Reveal className="relative">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-xl border border-white/10 p-8 flex items-center justify-center">
                 <img 
-                  src="https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/47uq5hwj_LogoNoText.png" 
+                  src={assets.headerLogo} 
                   alt="GGeese Studio Logo" 
                   className="w-full h-full object-contain"
                   loading="lazy" decoding="async"
+                  onError={(e) => { e.currentTarget.src = '/images/placeholder-logo.svg'; }}
                 />
               </div>
             </Reveal>

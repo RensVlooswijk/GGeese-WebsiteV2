@@ -58,6 +58,8 @@ export const Gallery = () => {
                     src={video.thumbnail} 
                     alt={video.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    loading="lazy" decoding="async"
+                    onError={(e) => { e.currentTarget.src = '/images/LogoNoText.png'; }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-60" />
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -121,6 +123,8 @@ export const Gallery = () => {
                       src={image.url} 
                       alt={image.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy" decoding="async"
+                      onError={(e) => { e.currentTarget.src = '/images/LogoNoText.png'; }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-0 left-0 right-0 p-4">
@@ -138,6 +142,8 @@ export const Gallery = () => {
                       src={image.url} 
                       alt={image.title}
                       className="w-full h-auto rounded-lg"
+                      loading="lazy" decoding="async"
+                      onError={(e) => { e.currentTarget.src = '/images/LogoNoText.png'; }}
                     />
                     <div className="mt-6">
                       <h3 className="text-2xl font-bold text-white mb-2">{image.title}</h3>

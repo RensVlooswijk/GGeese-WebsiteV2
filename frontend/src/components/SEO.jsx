@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import assets from '../config/assets';
 
 export const SEO = ({ 
   title = "GGeese Studio | Mixed Reality Entertainment",
   description = "GGeese Studio creates next-generation location-based mixed reality entertainment experiences. Featuring ArcadiaX - the ultimate XR drift karting platform.",
   keywords = "mixed reality, VR gaming, drift karting, location-based entertainment, XR platform, ArcadiaX, Meta Quest, virtual reality venues",
-  image = "https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/05ax7qxt_Logo.png",
+  image = assets.seoImage,
   type = "website",
   structuredData = null
 }) => {
@@ -65,7 +66,7 @@ export const SEO = ({
       "name": "GGeese Studio",
       "description": "GGeese Studio creates next-generation location-based mixed reality entertainment experiences.",
       "url": "https://ggeese.nl",
-      "logo": "https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/05ax7qxt_Logo.png",
+  "logo": "/images/LogoNoText.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "ggeesestudio@gmail.com",

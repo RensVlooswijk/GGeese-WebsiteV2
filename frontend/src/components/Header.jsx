@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Button } from './ui/button';
 import ScrollProgress from './ScrollProgress';
 import { Menu, X } from 'lucide-react';
+import assets from '../config/assets';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,9 +43,11 @@ export const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
             <img 
-              src="https://customer-assets.emergentagent.com/job_228b3afe-8d02-4e8c-8604-2bc2379db9f3/artifacts/47uq5hwj_LogoNoText.png"
+              src={assets.headerLogo}
               alt="GGeese Studio"
               className="h-12 w-12 transition-transform duration-300 group-hover:scale-110"
+              loading="eager" fetchPriority="high"
+              onError={(e) => { e.currentTarget.src = '/images/placeholder-logo.svg'; }}
             />
             <span className="text-2xl font-bold text-white transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-pink-400 group-hover:bg-clip-text group-hover:text-transparent">
               GGeese Studio
