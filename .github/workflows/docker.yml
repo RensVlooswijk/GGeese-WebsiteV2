@@ -7,6 +7,10 @@ on:
       - "frontend/**"
       - ".github/workflows/docker.yml"
 
+env:
+  # Use lowercase for GHCR namespace
+  IMAGE_NAME: ghcr.io/damosso/GGeese-WebsiteV2
+
 jobs:
   build:
     runs-on: ubuntu-latest
