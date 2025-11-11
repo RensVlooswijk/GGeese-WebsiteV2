@@ -1,6 +1,6 @@
 services:
   web:
-    image: ghcr.io/damosso/ggeese-websitev2:latest
+    image: ghcr.io/rensvlooswijk/ggeese-websitev2:latest
     ports:
       - "8043:3000"
     restart: unless-stopped
