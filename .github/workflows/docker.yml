@@ -35,7 +35,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io//damosso/GGeese-WebsiteV2
+          images: ghcr.io/damosso/GGeese-WebsiteV2
           tags: |
             type=raw,value=main
             type=sha
