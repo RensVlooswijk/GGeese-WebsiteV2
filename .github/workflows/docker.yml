@@ -9,7 +9,7 @@ on:
 
 env:
   # Use lowercase for GHCR namespace
-  IMAGE_NAME: ghcr.io/damosso/GGeese-WebsiteV2
+  IMAGE_NAME: ghcr.io/damosso/ggeese-websitev2
 
 jobs:
   build:
@@ -38,7 +38,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/damosso/GGeese-WebsiteV2
+          images: ghcr.io/damosso/ggeese-websitev2
           tags: |
             type=raw,value=main
             type=sha
