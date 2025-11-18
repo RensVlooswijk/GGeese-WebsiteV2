@@ -232,7 +232,7 @@ export const Home = () => {
             </a>
             
             <a 
-              href="https://discord.gg/ggeese" 
+              href="https://discord.gg/ZN7BdkkzKF" 
               target="_blank" 
               rel="noopener noreferrer"
               className="group"
