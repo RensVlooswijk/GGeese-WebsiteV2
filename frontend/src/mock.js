@@ -282,8 +282,8 @@ export const siteData = {
   
   contactInfo: {
     email: "ggeesestudio@gmail.com",
-    phone: "+31 (0)20 123 4567",
-    address: "Innovation District, Amsterdam, Netherlands",
+    phone: "+31 6 10358097",
+    address: "Brainport, Eindhoven, Netherlands",
     socialMedia: {
       twitter: "https://twitter.com/ggeesestudio",
       linkedin: "https://linkedin.com/company/ggeese-studio",
